@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:4006/login", {
+      await fetch("http://localhost:4006/login", {
         method: "POST",
         headers: {
             'Accept': 'application/json',

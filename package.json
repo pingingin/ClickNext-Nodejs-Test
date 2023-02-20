@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "install-client": "cd frontend && npm i",
+    "install-server": "cd backend && npm i",
+    "install-package": "concurrently \"npm run install-client\" \"npm run install-server\"",
+    "client": "cd frontend && npm start",
+    "server": "cd backend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    }
+}

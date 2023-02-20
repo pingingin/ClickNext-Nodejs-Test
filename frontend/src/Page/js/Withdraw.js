@@ -27,7 +27,7 @@ function Withdraw() {
 
   useEffect(() => {
     const checkLoggedIn = async () => {
-      const res = await fetch('http://localhost:4006/withdraw', {
+      await fetch('http://localhost:4006/withdraw', {
         method: "GET",
         headers: { 'x-access-token': token }
       }).then((response) => {
@@ -48,7 +48,7 @@ function Withdraw() {
     const error = ['Invalid Amount', 'Insufficient Balance']
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:4006/withdraw", {
+      await fetch("http://localhost:4006/withdraw", {
           method: "POST",
           headers: { 
             'Accept': 'application/json',

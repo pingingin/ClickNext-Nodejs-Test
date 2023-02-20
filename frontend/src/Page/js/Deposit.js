@@ -27,7 +27,7 @@ function Deposit() {
 
   useEffect(() => {
     const checkLoggedIn = async () => {
-      const res = await fetch('http://localhost:4006/deposit', {
+      await fetch('http://localhost:4006/deposit', {
         method: "GET",
         headers: { 'x-access-token': token }
       }).then((response) => {

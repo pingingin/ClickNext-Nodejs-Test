@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Route, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -19,12 +19,11 @@ function HistoryReceiver() {
 
   const [message, setMessage] = useState("")
   const [user, setUser] = useState({})
-  const [amount, setAmount] = useState(0)
   const [datas, setData] = useState([])
 
   useEffect(() => {
     const checkLoggedIn = async () => {
-      const res = await fetch('http://localhost:4006/history/receive', {
+      await fetch('http://localhost:4006/history/receive', {
         method: "GET",
         headers: { 'x-access-token': token }
       }).then((response) => {

@@ -19,12 +19,11 @@ function HistoryTransfer() {
 
   const [message, setMessage] = useState("")
   const [user, setUser] = useState({})
-  const [amount, setAmount] = useState(0)
   const [datas, setData] = useState([])
 
   useEffect(() => {
     const checkLoggedIn = async () => {
-      const res = await fetch('http://localhost:4006/history/transfer', {
+      await fetch('http://localhost:4006/history/transfer', {
         method: "GET",
         headers: { 'x-access-token': token }
       }).then((response) => {

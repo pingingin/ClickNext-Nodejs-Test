@@ -20,7 +20,7 @@ function Home() {
             if (localStorage.getItem('token')) {
                 var token = localStorage.getItem('token')
             }
-            const res = await fetch('http://localhost:4006/home',{
+            await fetch('http://localhost:4006/home',{
                 method: "POST",
                 headers: { 'x-access-token': token }
             }).then((response) => {
