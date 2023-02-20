@@ -8,6 +8,7 @@ Tools
     - NosqlDB (MongoDB)
 1. Frontend
     - SPA (React)
+    - CSS (Bootstrap)
 
 In the project directory, you can run:
 
