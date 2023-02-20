@@ -1,0 +1,29 @@
+* {
+  font-size: 20px;
+}
+
+.nav-bg-color {
+  background-color: #222129;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+input{
+  margin-top: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.error-message p{
+  font-size: 16px !important;
+  color: red;
+  margin: 0;
+}
