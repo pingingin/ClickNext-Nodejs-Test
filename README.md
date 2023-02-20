@@ -25,3 +25,16 @@ npm run install-package
 npm run dev
 ```
 4. Open <http://localhost:3006/>
+<hr>
+
+User data
+1. user1
+```
+    email: nattawut.pic@mail.com
+    password: 12345
+```
+2. user2
+```
+    email: paisan.sae@mail.com
+    password: 12345
+```
